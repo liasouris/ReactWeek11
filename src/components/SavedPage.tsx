@@ -39,7 +39,7 @@ const SavedPage: React.FC<SavedPageProps> = ({ savedJokes, deleteJoke }) => {
               onClick={() => deleteJoke(joke.id)}
               sx={{ mb: 2 }}
             >
-              Delete Joke
+              Delete
             </Button>
           </Card>
         ))

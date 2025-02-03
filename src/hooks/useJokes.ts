@@ -6,7 +6,7 @@ export interface IJoke {
   punchline: string;
 }
 
-const useJokes = () => {
+export function useJokes() {
   const [savedJokes, setSavedJokes] = useState<IJoke[]>([]);
 
   const saveJoke = (joke: IJoke): boolean => {
@@ -22,6 +22,4 @@ const useJokes = () => {
   };
 
   return { savedJokes, saveJoke, deleteJoke };
-};
-
-export default useJokes;
+}
